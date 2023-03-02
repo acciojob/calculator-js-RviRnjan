@@ -7,7 +7,74 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	import React, { useState } from 'react';
+
+function Calculator() {
+  const [displayValue, setDisplayValue] = useState('');
+
+  function handleNumberClick(number) {
+    setDisplayValue(displayValue + number);
+  }
+
+  function handleAdd() {
+    // TODO: Implement add function
+  }
+
+  function handleSubtract() {
+    // TODO: Implement subtract function
+  }
+
+  function handleMultiply() {
+    // TODO: Implement multiply function
+  }
+
+  function handleDivide() {
+    // TODO: Implement divide function
+  }
+
+  function handleClear() {
+    setDisplayValue('');
+  }
+
+  function handleBackspace() {
+    setDisplayValue(displayValue.slice(0, -1));
+  }
+
+  function handleOpenParenthesis() {
+    setDisplayValue(displayValue + '(');
+  }
+
+  function handleCloseParenthesis() {
+    setDisplayValue(displayValue + ')');
+  }
+
+  function handleEquals() {
+    // TODO: Implement equals function
+  }
+
+  return (
+    <div className="calculator">
+      <div id="display">{displayValue}</div>
+      <button id="plus" onClick={handleAdd}>+</button>
+      <button id="minus" onClick={handleSubtract}>-</button>
+      <button id="divi" onClick={handleDivide}>/</button>
+      <button id="multi" onClick={handleMultiply}>*</button>
+      <button id="op" onClick={handleOpenParenthesis}>(</button>
+      <button id="cl" onClick={handleCloseParenthesis}>)</button>
+      <button id="C" onClick={handleClear}>C</button>
+      <button id="back" onClick={handleBackspace}>Backspace</button>
+      <button id="equal" onClick={handleEquals}>=</button>
+      <button id="1" onClick={() => handleNumberClick('1')}>1</button>
+      <button id="2" onClick={() => handleNumberClick('2')}>2</button>
+      <button id="3" onClick={() => handleNumberClick('3')}>3</button>
+      <button id="4" onClick={() => handleNumberClick('4')}>4</button>
+      <button id="5" onClick={() => handleNumberClick('5')}>5</button>
+      <button id="6" onClick={() => handleNumberClick('6')}>6</button>
+      <button id="7" onClick={() => handleNumberClick('7')}>7</button>
+      <button id="8" onClick={() => handleNumberClick('8')}>8</button>
+      <button id="9" onClick={() => handleNumberClick('9')}>9</button>
+      <button id="0
+<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
 
